@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Factory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin:24px 0;" rs_id="9277">
+  <a class="navbar-brand" href="javascript:void(0)" rs_id="9278">Text Factory |</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" rs_id="9279" aria-expanded="true">
+    <span class="navbar-toggler-icon" rs_id="9280"></span>
+  </button>
+  <div class="navbar-collapse collapse show" id="navb" rs_id="9281" style="">
+    <ul class="navbar-nav mr-auto" rs_id="9282">
+      <li class="nav-item" rs_id="9283">
+        <a class="nav-link" href="javascript:void(0)" rs_id="9284">Home</a>
+      </li>
+      <li class="nav-item" rs_id="9285">
+        <a class="nav-link" href="javascript:void(0)" rs_id="9286">About Us</a>
+      </li>
+      <li class="nav-item" rs_id="9287">
+        <a class="nav-link " href="javascript:void(0)" rs_id="9288">Contect Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" rs_id="9289">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" rs_id="9290">
+      <button class="btn btn-success my-2 my-sm-0" type="button" rs_id="9291">Search</button>
+    </form>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="margin:24px 0;" rs_id="3756">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" rs_id="3758" aria-expanded="true">
+    <span class="navbar-toggler-icon" rs_id="3759"></span>
+  </button>
+
+    <nav class="navbar navbar-default navbar-static-top">
+</nav>
+    <nav class="navbar navbar-default navbar-static-top">
+</head>
+<body>
+<h4>Text Factory-Improve Your Grammar Mistake</h4>
+<div class="container" >
+<form  action="/analyse" method="post">{% csrf_token %}
+
+
+    <div><textarea name="text" class="  form-control" placeholder="Enter Your Text" style='margin: 5px; width: 1000px; height: 236px;'></textarea></div></br>
+    <div class="custom-control custom-switch" style="margin:5px;">
+    <input type="checkbox" class="custom-control-input" name="removepunc" id="switch1">
+    <label class="custom-control-label" for="switch1">Remove Punctuations</label>
+  </div>
+   <div class="custom-control custom-switch"style="margin:5px;">
+    <input type="checkbox" class="custom-control-input" name="captilization" id="switch2">
+    <label class="custom-control-label" for="switch2">CAPITILIZATION</label>
+  </div>
+   <div class="custom-control custom-switch"style="margin:5px;">
+    <input type="checkbox" class="custom-control-input" name="newlineremover" id="switch3">
+    <label class="custom-control-label" for="switch3">New-line-Remover</label>
+  </div>
+    <div class="custom-control custom-switch"style="margin:5px;">
+    <input type="checkbox" class="custom-control-input" name="extraspaceremover" id="switch4">
+    <label class="custom-control-label" for="switch4">Extra space Remover</label>
+  </div>
+      <button class="btn btn-success" type="submit">Analyse Text</button>
+</form>
+</div>
+</body>
+
+        <nav class="navbar navbar-primary navbar-static-top" float-text="center">Cordinated By: Attiq ur Rehman</nav>
+
+</html>
